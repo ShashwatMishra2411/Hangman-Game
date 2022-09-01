@@ -1,6 +1,6 @@
 #########################################################
-## File Name: hangman.py                               ##
-## Description: Starter for Hangman project - ICS3U    ##
+# # File Name: hangman.py                               ##
+# # Description: Starter for Hangman project - ICS3U    ##
 #########################################################
 import pygame
 import random
@@ -111,7 +111,7 @@ def end(winner=False):
         label = lost_font.render(lostTxt, 1, BLACK)
 
     wordTxt = lost_font.render(word.upper(), 1, BLACK)
-    wordWas = lost_font.render('The phrase was: ', 1, BLACK)
+    wordWas = lost_font.render('The player was: ', 1, BLACK)
 
     win.blit(wordTxt, (winWidth / 2 - wordTxt.get_width() / 2, 295))
     win.blit(wordWas, (winWidth / 2 - wordWas.get_width() / 2, 245))
